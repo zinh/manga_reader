@@ -1,0 +1,9 @@
+<p ng-if='is_error' class="bg-danger">Can't load manga</p>
+
+<img ng-if='is_loading' src='/images/loading.gif' />
+
+<a ng-if='chapters.previous_link' href='#/manga/chapter?chapter={{chapters.previous_link}}'>Previous</a>
+<a ng-if='chapters.next_link' href='#/manga/chapter?chapter={{chapters.next_link}}'>Next</a>
+<img ng-repeat='image in chapters.images' src='{{ image }}' width='100%'/>
+<a ng-if='chapters.previous_link' href='#/manga/chapter?chapter={{chapters.previous_link}}'>Previous</a>
+<a ng-if='chapters.next_link' href='#/manga/chapter?chapter={{chapters.next_link}}'>Next</a>

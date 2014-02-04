@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='mangaSearch'>
+<head>
+  <title>Manga Search</title>
+  <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"%>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "//code.jquery.com/jquery-1.10.1.min.js" %>
+  <%= javascript_include_tag "//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" %>
+  <%= javascript_include_tag "application" %>
+  <%= additional_js %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class='container'>
+    <%= yield %>
+  </div>
+</body>
+</html>
