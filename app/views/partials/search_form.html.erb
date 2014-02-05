@@ -1,10 +1,12 @@
-<h2>Manga Search</h2>
-<input class='form-control' placeholder='Manga name' ng-model="query">
-<div class='search-result'>
-  <figure ng-repeat='manga in mangas' style='float:left;'>
-  <a href='#/manga/title/{{manga[2]}}'>
-    <img height='300px' src='http://l.mfcdn.net/store/manga/{{manga[0]}}/cover.jpg'>
-    <figcaption>{{ manga[1] }}</figcaption>
-  </a>
-  </figure>
+<div class='container'>
+  <h3>Manga Search</h3>
+  <input class='form-control' placeholder='Manga name' ng-model="query">
+  <div class='search-result'>
+    <figure ng-repeat='manga in mangas' style='float:left;'>
+    <a href='#/manga/title/{{manga[2]}}'>
+      <img height='300px' src='http://l.mfcdn.net/store/manga/{{manga[0]}}/cover.jpg'>
+      <figcaption>{{ manga[1] }}</figcaption>
+    </a>
+    </figure>
+  </div>
 </div>

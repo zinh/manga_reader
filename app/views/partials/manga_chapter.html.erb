@@ -2,10 +2,10 @@
 
 <%= image_tag 'loading.gif', 'ng-if' => 'is_loading' %>
 
-<a ng-if='chapters.previous_link' href='#/manga/chapter?chapter={{chapters.previous_link}}'>Previous</a>
-<a ng-if='chapters.next_link' href='#/manga/chapter?chapter={{chapters.next_link}}'>Next</a>
+<a class='btn btn-primary' ng-if='chapters.previous_link' href='#/manga/chapter?chapter={{chapters.previous_link}}'>< Previous</a>
+<a class='btn btn-primary' ng-if='chapters.next_link' href='#/manga/chapter?chapter={{chapters.next_link}}'>Next ></a>
 
 <img ng-repeat='image in chapters.images' src='{{ image }}' width='100%'/>
 
-<a ng-if='chapters.previous_link' href='#/manga/chapter?chapter={{chapters.previous_link}}'>Previous</a>
-<a ng-if='chapters.next_link' href='#/manga/chapter?chapter={{chapters.next_link}}'>Next</a>
+<a class='btn btn-primary' ng-if='chapters.previous_link' href='#/manga/chapter?chapter={{chapters.previous_link}}'>< Previous</a>
+<a class='btn btn-primary' ng-if='chapters.next_link' href='#/manga/chapter?chapter={{chapters.next_link}}'>Next ></a>
