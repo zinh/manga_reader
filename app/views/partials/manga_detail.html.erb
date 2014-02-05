@@ -1,0 +1,8 @@
+<div class='container'>
+  <h2>{{ title  }}<h2>
+    <ul class='list-unstyled'>
+      <li ng-repeat='chapter in chapters'>
+      <a href="#/manga/chapter?chapter={{ chapter.link }}">{{ chapter.link_id }}</a> {{ chapter.title }}
+      </li>
+    </ul>
+</div>
