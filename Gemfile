@@ -37,3 +37,4 @@ gem 'unicorn'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+# add comment on Gemfile
