@@ -1,5 +1,6 @@
 class PartialsController < ApplicationController
 
+  # read each chapter of manga
   def manga_chapter
     render layout: false
   end
