@@ -1,4 +1,4 @@
-MangaSearch::Application.routes.draw do
+Rails.application.routes.draw do
   controller :homes do
     post '/manga/search' => :search, as: 'manga_search'
     post '/manga/detail' => :manga_detail, as: 'manga_detail'
